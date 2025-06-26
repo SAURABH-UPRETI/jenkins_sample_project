@@ -1,40 +1,24 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+                             
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Project Info -->
-    <groupId>com.saurabh</groupId>         <!-- Like a package name -->
-    <artifactId>sample-java-project</artifactId> <!-- Project name -->
+    <groupId>com.saurabh</groupId>
+    <artifactId>jenkins-sample</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <!-- Metadata -->
-    <name>Sample Java Project</name>
-    <description>A simple Maven project integrated with Jenkins and Docker</description>
+    <name>Jenkins Sample Project</name>
 
-    <!-- Java Version -->
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
-
-    <!-- Build Plugins -->
-    <build>
-        <plugins>
-            <!-- Compiler Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
-            </plugin>
-        </plugins>
-    </build>
-
-    <!-- Dependencies -->
     <dependencies>
-        <!-- Example: JUnit for testing -->
         <dependency>
             <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
