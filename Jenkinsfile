@@ -2,20 +2,25 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Clone Repo') {
+            steps {
+                git 'https://github.com/SAURABH-UPRETI/jenkins_sample_project.git'
+            }
+        }
+
+        stage('Build with Maven') {
             steps {
                 sh 'mvn clean install'
             }
         }
-        
-    stages {
+
         stage('Docker Build') {
             steps {
                 sh 'docker build -t saurabh-sample-image .'
             }
         }
 
-        stage('Run Container') {
+        stage('Run Docker Container') {
             steps {
                 sh 'docker run --rm saurabh-sample-image'
             }
