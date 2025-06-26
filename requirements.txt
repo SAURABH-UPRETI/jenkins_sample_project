@@ -1,1 +1,3 @@
+# requirements.txt
 
+# Nothing required for now — built-in modules only
