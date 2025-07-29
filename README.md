@@ -1,3 +1,3 @@
 # jenkins_sample_project
 
-# we will create a CI CD pipline for this project 
+# We will create a CI CD pipeline for this project 
